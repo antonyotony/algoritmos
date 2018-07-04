@@ -1,0 +1,23 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+let turno = prompt("** Digite seu turno --> M: Matutino, V: Vespertino ou N: Noturno **")
+            .toLowerCase()
+            .trim()
+            .charAt(0);
+
+    switch(turno){
+        case 'm':
+        alert('Bom dia!');
+        break;
+        case 'v':
+        alert('Boa tarde!');
+        break;
+        case 'n':
+        alert("Boa noite!");
+        break;
+        default:
+        alert('Valor Inválido');
+    } 
+</script>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+let produto1 = parseFloat(prompt("Informe o valor do primeiro produto: "));
+let produto2 = parseFloat(prompt("Informe o valor do segundo produto: "));
+let produto3 = parseFloat(prompt("Informe o valor do terceiro produto: "));
+
+
+if (produto1 < produto2 && produto1 < produto3 ) {
+    alert('O mais barato é o primeiro produto R$: ' + produto1);
+} else if (produto2 < produto1 && produto2 < produto3) {
+    alert('O mais barato é o segundo produto R$: ' + produto2);
+} else if (produto3 < produto1 && produto3 < produto2){
+    alert("O mais barato é o terceiro produto R$: " + produto3);
+} else{
+    alert('Os produtos tem o mesmo valor, escolha o de melhor qualidade! (:')
+}
+</script>
+</html>
