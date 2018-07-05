@@ -1,12 +1,12 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
-let produto1 = parseFloat(prompt("Informe o primeiro número: "));
-let produto2 = parseFloat(prompt("Informe o segundo número: "));
-let produto3 = parseFloat(prompt("Informe o terceiro número: "));
+let nota1 = parseFloat(prompt("Informe o primeiro número: "));
+let nota2 = parseFloat(prompt("Informe o segundo número: "));
+let nota3 = parseFloat(prompt("Informe o terceiro número: "));
 
 
-if (produto1 > produto2 && produto1 > produto3) {
+/* if (produto1 > produto2 && produto1 > produto3) {
     alert('A sequência em ordem decrescente é: ' + produto1 + ", " + produto2 + ", " + produto3);
 } else if (produto2 > produto1 && produto2 > produto3) {
     alert('A sequência em ordem decrescente é: ' + produto2 + ", " + produto1 + ", " + produto3);
@@ -16,7 +16,25 @@ if (produto1 > produto2 && produto1 > produto3) {
 
 if (produto1 > produto3 && produto1 < produto2){
     alert("")
+} */
+
+
+if(nota1 > nota2){
+    auxiliar = nota1;
+    nota1 = nota2;
+    nota2 = auxiliar
 }
+if (nota2 > nota3){
+    auxiliar = nota2;
+    nota2 = nota3;
+    nota3 = auxiliar;
+}
+if(nota1 > nota2){
+    auxiliar = nota1;
+    nota1 = nota2;
+    nota2 = auxiliar;
+}
+alert(nota1 + '<' + nota2 + '<' + nota3);
 
 </script>
 </html>
