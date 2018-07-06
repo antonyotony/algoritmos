@@ -1,19 +1,47 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
-nome = prompt("Digite seu nome");
-idade = prompt("Digite sua idade");
-salario = prompt("Digite seu salário");
-sexo = prompt("Informe seu sexo: m ou f");
-ecivil = prompt("Informe seu estado civil: s, c, v, d");
+for (let i = 0; i <= 10; i++){
+    var nome = prompt("Digite seu nome").toUpperCase();
+    if (nome.length > 3){
+        break;
+    }
+}    
+
+alert(nome);
 
 for (let i = 0; i <= 10; i++){
-    if (login == senha){
-        alert("Seu login não pode ser igual a senha");
-    } else{
-        alert("Sucesso");
+    var idade = parseInt(prompt("Digite sua idade"));
+    if (!isNaN(idade) && idade >= 0 && idade <= 150){
         break;
-    }          
+    }
 }
+
+alert(idade);
+
+for (let i = 0; i <= 10; i++){
+    var salario = parseFloat(prompt("Digite seu salário"));
+    if (!isNaN(salario) && salario >= 0){
+        break;
+    }
+}
+
+alert(salario);
+
+for (let i = 0; i <= 10; i++){
+    var sexo = prompt("Informe seu sexo").toUpperCase().trim().charAt(0)
+    if (sexo == 'M' || sexo =='F'){
+        break;
+    }
+}
+alert(sexo)
+
+for (let i = 0; i <= 10; i++){
+    var civil = prompt("Informe seu estado civil").toUpperCase().trim().charAt(0)
+    if (civil == 'S' || civil =='C' || civil == 'V' || civil == 'D'){
+        break;
+    }
+}
+alert(civil)
 </script>
 </html>

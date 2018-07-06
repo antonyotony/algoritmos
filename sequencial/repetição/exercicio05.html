@@ -1,0 +1,25 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+let taxaA = 3/100;
+let taxaB = 1.5/100;
+
+for (let i = 0; i < 100; i++){
+    var paisA = parseFloat(prompt("Informe a população da primeira cidade"));
+    var paisB = parseFloat(prompt("Informe a população da segunda cidade"));
+    paisA += paisA * taxaA;
+    paisB += paisB * taxaB;
+    if (paisA >= paisB){
+        alert("Passaram-se " + i + ' anos');
+        alert("População de A: " + paisA);
+        alert("População de B: " + paisB);
+        break;
+    } else if (paisB >= paisA){
+        alert("Passaram-se " + i + ' anos');
+        alert("População de A: " + paisA);
+        alert("População de B: " + paisB);
+        break;
+    }
+}   
+</script>
+</html>

@@ -1,9 +1,9 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <script>
-let numero = 0;
+/* let numero = 0 */;
 
-for (let i = 0; i <= 10; i++){
+/* for (let i = 0; i <= 10; i++){
     numero = parseInt(prompt("Informe um número"));
     if (isNaN(numero) || numero < 0 || numero > 10){
         alert("Inválido");
@@ -12,6 +12,17 @@ for (let i = 0; i <= 10; i++){
     }
 }
 
+alert(numero); */
+
+//////////////////
+
+let i = 0;
+let numero = prompt("Escolha um número entre 1 e 10"); 
+while(numero<0 || numero>10){
+    i++;
+    prompt("Número inválido. Digite um número entre 1 e 10");
+}
 alert(numero);
+
 </script>
 </html>
